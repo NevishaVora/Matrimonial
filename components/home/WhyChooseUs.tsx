@@ -51,7 +51,7 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-[#FCFAF5] py-6 sm:py-10 lg:py-12">
+    <section className="bg-[var(--color-golden-500)] py-6 sm:py-10 lg:py-12">
       <Container>
         <SectionTitle
           subtitle="Why Choose Us"
@@ -66,17 +66,17 @@ export default function WhyChooseUs() {
               className="group rounded-3xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-2xl lg:hover:-translate-y-3 lg:p-8"
             >
               {/* Icon */}
-              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#FFF4D8] text-2xl text-[#C7A54B] transition-all duration-300 group-hover:bg-[#C7A54B] group-hover:text-white sm:h-16 sm:w-16 sm:text-3xl">
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--color-golden-100)] text-2xl text-[var(--color-golden)] transition-all duration-300 group-hover:bg-[var(--color-golden)] group-hover:text-white sm:h-16 sm:w-16 sm:text-3xl">
                 {item.icon}
               </div>
 
               {/* Title */}
-              <h3 className="mt-5 text-lg font-semibold text-[#C7A54B] sm:mt-6 sm:text-xl">
+              <h3 className="mt-5 text-lg font-semibold text-[var(--color-golden)] sm:mt-6 sm:text-xl">
                 {item.title}
               </h3>
 
               {/* Description */}
-              <p className="mt-3 text-sm leading-6 text-gray-600 sm:mt-4 sm:text-base sm:leading-7">
+              <p className="mt-3 text-sm leading-6 text-[var(--color-maroon)] sm:mt-4 sm:text-base sm:leading-7">
                 {item.description}
               </p>
             </div>

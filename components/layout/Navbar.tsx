@@ -66,7 +66,7 @@ export default function Navbar() {
                             <img
                                 src="/Images/logo-bg.png"
                                 alt="Logo"
-                                className="w-[80px] h-[70px]"
+                                className="w-[130px] h-[100px]"
                             />
                         </Link>
 
@@ -76,7 +76,7 @@ export default function Navbar() {
                                 <a
                                     key={item.label}
                                     href={item.href}
-                                    className="font-medium text-[#C7A54B]"
+                                    className="font-medium text-[var(--color-golden)]"
                                 >
                                     {item.label}
                                 </a>
@@ -87,14 +87,14 @@ export default function Navbar() {
                         <div className="hidden lg:flex items-center gap-4">
                             <button
                                 onClick={openLogin}
-                                className="font-medium text-[#C7A54B] cursor-pointer"
+                                className="font-medium text-[var(--color-golden)] cursor-pointer"
                             >
                                 Login
                             </button>
 
                             <button
                                 onClick={openRegister}
-                                className="rounded-full bg-[#C7A54B] px-5 py-2 text-white cursor-pointer hover:bg-[#aa8731]"
+                                className="rounded-full bg-[var(--color-golden)] px-5 py-2 text-white cursor-pointer hover:bg-[var(--color-golden-dark)]"
                             >
                                 Register
                             </button>
@@ -106,9 +106,9 @@ export default function Navbar() {
                             className="relative z-[60] lg:hidden flex h-11 w-11 items-center justify-center rounded-full bg-white shadow-lg"
                         >
                             {open ? (
-                                <HiXMark className="h-7 w-7 text-[#C7A54B]" />
+                                <HiXMark className="h-7 w-7 text-[var(--color-golden)]" />
                             ) : (
-                                <HiBars3 className="h-7 w-7 text-[#C7A54B]" />
+                                <HiBars3 className="h-7 w-7 text-[var(--color-golden)]" />
                             )}
                         </button>
                     </div>
@@ -124,7 +124,7 @@ export default function Navbar() {
                                     key={item.label}
                                     href={item.href}
                                     onClick={() => setOpen(false)}
-                                    className="font-medium text-[#C7A54B]"
+                                    className="font-medium text-[var(--color-golden)]"
                                 >
                                     {item.label}
                                 </a>
@@ -135,7 +135,7 @@ export default function Navbar() {
                                     setOpen(false);
                                     openLogin();
                                 }}
-                                className="text-left font-medium text-[#C7A54B]"
+                                className="text-left font-medium text-[var(--color-golden)]"
                             >
                                 Login
                             </button>
@@ -145,7 +145,7 @@ export default function Navbar() {
                                     setOpen(false);
                                     openRegister();
                                 }}
-                                className="rounded-full bg-[#C7A54B] py-3 text-white hover:bg-[#aa8731]"
+                                className="rounded-full bg-[var(--color-golden)] py-3 text-white hover:bg-[var(--color-golden-dark)]"
                             >
                                 Register
                             </button>

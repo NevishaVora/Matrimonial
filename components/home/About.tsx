@@ -10,19 +10,19 @@ import {
 
 const features = [
   {
-    icon: <FaHeart className="text-lg text-[#C7A54B] sm:text-xl" />,
+    icon: <FaHeart className="text-lg text-[var(--color-golden)] sm:text-xl" />,
     title: "Trusted Matchmaking",
     description:
       "Helping families build lifelong relationships with trust.",
   },
   {
-    icon: <FaUserShield className="text-lg text-[#C7A54B] sm:text-xl" />,
+    icon: <FaUserShield className="text-lg text-[var(--color-golden)] sm:text-xl" />,
     title: "Verified Members",
     description:
       "Every profile is verified for a safe matchmaking experience.",
   },
   {
-    icon: <FaUsers className="text-lg text-[#C7A54B] sm:text-xl" />,
+    icon: <FaUsers className="text-lg text-[var(--color-golden)] sm:text-xl" />,
     title: "Happy Families",
     description:
       "Thousands of successful marriages across the country.",
@@ -56,7 +56,7 @@ export default function About() {
               title="Creating Beautiful Relationships Since 2000"
             />
 
-            <p className="mb-8 text-base leading-7 text-gray-600 sm:mb-10 sm:text-lg sm:leading-8">
+            <p className="mb-8 text-base leading-7 text-[var(--color-maroon)] sm:mb-10 sm:text-lg sm:leading-8">
               We believe marriage is not just about finding a partner but
               building a lifetime relationship based on trust, understanding,
               and shared values. Our dedicated team ensures every profile is
@@ -71,16 +71,16 @@ export default function About() {
                   key={index}
                   className="flex items-start gap-4 sm:gap-5"
                 >
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#FFF7E5] sm:h-14 sm:w-14">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-golden-50)] sm:h-14 sm:w-14">
                     {item.icon}
                   </div>
 
                   <div>
-                    <h3 className="mb-2 text-lg font-semibold text-[#C7A54B] sm:text-xl">
+                    <h3 className="mb-2 text-lg font-semibold text-[var(--color-golden)] sm:text-xl">
                       {item.title}
                     </h3>
 
-                    <p className="text-sm leading-6 text-gray-500 sm:text-base sm:leading-7">
+                    <p className="text-sm leading-6 text-[var(--color-maroon)] sm:text-base sm:leading-7">
                       {item.description}
                     </p>
                   </div>
@@ -91,29 +91,29 @@ export default function About() {
             {/* Checklist */}
             <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
               <div className="flex items-center gap-3">
-                <FaCheckCircle className="shrink-0 text-[#C7A54B]" />
-                <span className="text-sm font-medium text-[#C7A54B] sm:text-base">
+                <FaCheckCircle className="shrink-0 text-[var(--color-golden)]" />
+                <span className="text-sm font-medium text-[var(--color-golden)] sm:text-base">
                   100% Genuine Profiles
                 </span>
               </div>
 
               <div className="flex items-center gap-3">
-                <FaCheckCircle className="shrink-0 text-[#C7A54B]" />
-                <span className="text-sm font-medium text-[#C7A54B] sm:text-base">
+                <FaCheckCircle className="shrink-0 text-[var(--color-golden)]" />
+                <span className="text-sm font-medium text-[var(--color-golden)] sm:text-base">
                   Privacy Protected
                 </span>
               </div>
 
               <div className="flex items-center gap-3">
-                <FaCheckCircle className="shrink-0 text-[#C7A54B]" />
-                <span className="text-sm font-medium text-[#C7A54B] sm:text-base">
+                <FaCheckCircle className="shrink-0 text-[var(--color-golden)]" />
+                <span className="text-sm font-medium text-[var(--color-golden)] sm:text-base">
                   Trusted Families
                 </span>
               </div>
 
               <div className="flex items-center gap-3">
-                <FaCheckCircle className="shrink-0 text-[#C7A54B]" />
-                <span className="text-sm font-medium text-[#C7A54B] sm:text-base">
+                <FaCheckCircle className="shrink-0 text-[var(--color-golden)]" />
+                <span className="text-sm font-medium text-[var(--color-golden)] sm:text-base">
                   24×7 Support
                 </span>
               </div>

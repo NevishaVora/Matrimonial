@@ -30,7 +30,7 @@ export default function SuccessStories() {
   return (
     <section
       id="stories"
-      className="bg-[#FFFDF8] py-6 sm:py-10 lg:py-12"
+      className="bg-[var(--color-golden-50)] py-6 sm:py-10 lg:py-12"
     >
       <Container>
         <SectionTitle
@@ -57,15 +57,15 @@ export default function SuccessStories() {
 
               {/* Content */}
               <div className="p-6 sm:p-7 lg:p-8">
-                <h3 className="text-lg font-semibold text-[#C7A54B] sm:text-xl">
+                <h3 className="text-lg font-semibold text-[var(--color-golden)] sm:text-xl">
                   {story.names}
                 </h3>
 
-                <p className="mt-2 text-sm font-medium text-[#C7A54B] sm:text-base">
+                <p className="mt-2 text-sm font-medium text-[var(--color-golden)] sm:text-base">
                   {story.location}
                 </p>
 
-                <p className="mt-4 text-sm leading-6 text-gray-600 sm:mt-5 sm:text-base sm:leading-7">
+                <p className="mt-4 text-sm leading-6 text-[var(--color-maroon)] sm:mt-5 sm:text-base sm:leading-7">
                   {story.text}
                 </p>
               </div>
