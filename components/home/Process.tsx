@@ -51,7 +51,7 @@ export default function Process() {
 
         <div className="relative mt-10 sm:mt-14 lg:mt-20">
           {/* Desktop Timeline */}
-          <div className="absolute left-0 right-0 top-12 hidden h-1 bg-[#F2E5BF] lg:block" />
+          <div className="absolute left-0 right-0 top-12 hidden h-1 bg-[var(--color-golden-400)] lg:block" />
 
           <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-12 lg:grid-cols-4 lg:gap-8">
             {steps.map((step) => (
@@ -60,22 +60,22 @@ export default function Process() {
                 className="relative text-center"
               >
                 {/* Icon Circle */}
-                <div className="relative z-10 mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#C7A54B] text-2xl text-white shadow-xl transition-transform duration-300 hover:scale-105 sm:h-24 sm:w-24 sm:text-3xl">
+                <div className="relative z-10 mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[var(--color-golden)] text-2xl text-white shadow-xl transition-transform duration-300 hover:scale-105 sm:h-24 sm:w-24 sm:text-3xl">
                   {step.icon}
                 </div>
 
                 {/* Step Number */}
-                <div className="mt-5 inline-flex rounded-full bg-[#FFF5D8] px-4 py-1 text-xs font-semibold text-[#C7A54B] sm:mt-6 sm:text-sm">
+                <div className="mt-5 inline-flex rounded-full bg-[var(--color-golden-100)] px-4 py-1 text-xs font-semibold text-[var(--color-golden)] sm:mt-6 sm:text-sm">
                   Step {step.number}
                 </div>
 
                 {/* Title */}
-                <h3 className="mt-4 text-lg font-semibold text-[#C7A54B] sm:mt-5 sm:text-xl">
+                <h3 className="mt-4 text-lg font-semibold text-[var(--color-golden)] sm:mt-5 sm:text-xl">
                   {step.title}
                 </h3>
 
                 {/* Description */}
-                <p className="mx-auto mt-3 max-w-xs text-sm leading-6 text-gray-600 sm:mt-4 sm:text-base sm:leading-7">
+                <p className="mx-auto mt-3 max-w-xs text-sm leading-6 text-[var(--color-maroon)] sm:mt-4 sm:text-base sm:leading-7">
                   {step.description}
                 </p>
               </div>

@@ -19,9 +19,9 @@ export default function Button({
         "inline-flex items-center justify-center",
         "cursor-pointer",
         variant === "primary" &&
-          "bg-[#C7A54B] text-white hover:bg-[#B18C35] shadow-lg hover:shadow-xl",
+          "bg-[var(--color-golden)] text-white hover:bg-[var(--color-golden-dark)] shadow-lg hover:shadow-xl",
         variant === "outline" &&
-          "border-2 border-[#C7A54B] text-[#C7A54B] hover:bg-[#C7A54B] hover:text-white",
+          "border-2 border-[var(--color-golden)] text-[var(--color-golden)] hover:bg-[var(--color-golden)] hover:text-white",
         className
       )}
       {...props}

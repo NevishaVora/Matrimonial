@@ -47,7 +47,7 @@ export default function Testimonials() {
               className="relative rounded-[24px] border border-gray-100 bg-white p-6 shadow-lg transition-all duration-300 hover:shadow-2xl lg:rounded-[30px] lg:p-8 lg:hover:-translate-y-2"
             >
               {/* Quote Icon */}
-              <FaQuoteLeft className="absolute right-5 top-5 text-4xl text-[#C7A54B]/20 sm:right-6 sm:top-6 sm:text-5xl" />
+              <FaQuoteLeft className="absolute right-5 top-5 text-4xl text-[var(--color-golden)]/20 sm:right-6 sm:top-6 sm:text-5xl" />
 
               {/* User */}
               <div className="flex items-center gap-4">
@@ -60,18 +60,18 @@ export default function Testimonials() {
                 />
 
                 <div>
-                  <h3 className="text-lg font-semibold text-[#C7A54B] sm:text-xl">
+                  <h3 className="text-lg font-semibold text-[var(--color-golden)] sm:text-xl">
                     {item.name}
                   </h3>
 
-                  <p className="text-sm text-gray-500 sm:text-base">
+                  <p className="text-sm text-[var(--color-maroon)] sm:text-base">
                     {item.city}
                   </p>
                 </div>
               </div>
 
               {/* Rating */}
-              <div className="mt-5 flex gap-1 text-sm text-[#C7A54B] sm:mt-6 sm:text-base">
+              <div className="mt-5 flex gap-1 text-sm text-[var(--color-golden)] sm:mt-6 sm:text-base">
                 <FaStar />
                 <FaStar />
                 <FaStar />
@@ -80,7 +80,7 @@ export default function Testimonials() {
               </div>
 
               {/* Review */}
-              <p className="mt-5 text-sm leading-7 text-gray-600 sm:mt-6 sm:text-base sm:leading-8">
+              <p className="mt-5 text-sm leading-7 text-[var(--color-maroon)] sm:mt-6 sm:text-base sm:leading-8">
                 {item.review}
               </p>
             </div>
