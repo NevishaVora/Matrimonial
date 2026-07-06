@@ -32,32 +32,39 @@ const services = [
 
 export default function Footer() {
     return (
-        <footer className="bg-[var(--color-golden-300)] pt-8 pb-8 text-[var(--color-maroon)] sm:pt-14 lg:pt-16">
+        <footer className="bg-[var(--color-golden-300)] py-10 text-[var(--color-maroon)] lg:py-16">
             <Container>
                 {/* Top Section */}
-                <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
+                <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-12 lg:gap-10">
+
                     {/* Company */}
-                    <div>
-                        <Link href="/#home" className="flex items-center">
+                    <div className="lg:col-span-4">
+                        <Link href="/#home" className="inline-flex">
                             <img
                                 src="/Images/logo-bg.png"
                                 alt="Logo"
-                                className="w-[130px] h-[100px]"
+                                className="w-[130px] h-[120px]"
                             />
                         </Link>
 
-                        <p className="mt-5 text-sm leading-7 text-[var(--color-maroon)] sm:mt-6 sm:text-base sm:leading-8">
-                            We help people find genuine life partners through a trusted,
-                            secure and premium matchmaking platform.
+                        <p className="mt-5 max-w-md text-[15px] leading-8 text-[var(--color-maroon)]">
+                            Aaha Kalyanam is a globally trusted matrimony service
+                            offering verified profiles, personalized matchmaking,
+                            privacy, and security to help you find your perfect
+                            life partner with confidence and trust.
                         </p>
 
-                        <div className="mt-6 flex flex-wrap gap-3 sm:mt-8 sm:gap-4">
+                        <p className="mt-5 font-medium text-[var(--color-maroon)]">
+                            "May your bonds be wonderfully perfect! 💍"
+                        </p>
+
+                        <div className="mt-8 flex gap-4">
                             {[FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube].map(
                                 (Icon, index) => (
                                     <a
                                         key={index}
                                         href="#"
-                                        className="flex h-10 w-10 items-center justify-center rounded-full bg-[var(--color-golden-dark)] text-white transition hover:bg-[var(--color-golden)] sm:h-11 sm:w-11"
+                                        className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--color-golden-dark)] text-white transition duration-300 hover:bg-[var(--color-golden)]"
                                     >
                                         <Icon />
                                     </a>
@@ -67,17 +74,17 @@ export default function Footer() {
                     </div>
 
                     {/* Quick Links */}
-                    <div className="mt-4">
-                        <h3 className="mb-5 text-lg font-semibold sm:mb-6 sm:text-xl">
+                    <div className="mt-5 lg:col-span-2">
+                        <h3 className="mb-6 text-2xl font-semibold">
                             Quick Links
                         </h3>
 
-                        <ul className="space-y-3 sm:space-y-4">
+                        <ul className="space-y-4">
                             {quickLinks.map((item) => (
                                 <li key={item}>
                                     <Link
                                         href="#"
-                                        className="text-sm text-[var(--color-maroon)] transition hover:text-[var(--color-golden)] sm:text-base"
+                                        className="text-base transition hover:text-[var(--color-golden)]"
                                     >
                                         {item}
                                     </Link>
@@ -87,17 +94,17 @@ export default function Footer() {
                     </div>
 
                     {/* Services */}
-                    <div className="mt-4">
-                        <h3 className="mb-5 text-lg font-semibold sm:mb-6 sm:text-xl">
+                    <div className="mt-5 lg:col-span-3">
+                        <h3 className="mb-6 text-2xl font-semibold">
                             Our Services
                         </h3>
 
-                        <ul className="space-y-3 sm:space-y-4">
+                        <ul className="space-y-4">
                             {services.map((item) => (
                                 <li key={item}>
                                     <Link
                                         href="#"
-                                        className="text-sm text-[var(--color-maroon)] transition hover:text-[var(--color-golden)] sm:text-base"
+                                        className="text-base transition hover:text-[var(--color-golden)]"
                                     >
                                         {item}
                                     </Link>
@@ -107,32 +114,29 @@ export default function Footer() {
                     </div>
 
                     {/* Contact */}
-                    <div className="mt-4">
-                        <h3 className="mb-5 text-lg font-semibold sm:mb-6 sm:text-xl">
+                    <div className="mt-5 lg:col-span-3">
+                        <h3 className="mb-6 text-2xl font-semibold">
                             Contact Us
                         </h3>
 
-                        <div className="space-y-5 sm:space-y-6">
-                            <div className="flex items-start gap-3 sm:gap-4">
-                                <FaPhoneAlt className="mt-1 shrink-0 text-[var(--color-golden)]" />
-
-                                <p className="text-sm text-[var(--color-maroon)] sm:text-base">
+                        <div className="space-y-6">
+                            <div className="flex items-start gap-4">
+                                <FaPhoneAlt className="mt-1 text-[var(--color-golden)]" />
+                                <p className="text-base">
                                     +91 98765 43210
                                 </p>
                             </div>
 
-                            <div className="flex items-start gap-3 sm:gap-4">
-                                <FaEnvelope className="mt-1 shrink-0 text-[var(--color-golden)]" />
-
-                                <p className="break-all text-sm text-[var(--color-maroon)] sm:text-base">
+                            <div className="flex items-start gap-4">
+                                <FaEnvelope className="mt-1 text-[var(--color-golden)]" />
+                                <p className="text-base break-all">
                                     info@matrimony.com
                                 </p>
                             </div>
 
-                            <div className="flex items-start gap-3 sm:gap-4">
-                                <FaMapMarkerAlt className="mt-1 shrink-0 text-[var(--color-golden)]" />
-
-                                <p className="text-sm leading-6 text-[var(--color-maroon)] sm:text-base sm:leading-7">
+                            <div className="flex items-start gap-4">
+                                <FaMapMarkerAlt className="mt-1 text-[var(--color-golden)]" />
+                                <p className="text-base leading-7">
                                     Ahmedabad, Gujarat, India
                                 </p>
                             </div>
@@ -141,12 +145,12 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom */}
-                <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-[var(--color-golden-800)] pt-6 text-center sm:mt-12 sm:pt-8 lg:flex-row lg:text-left">
-                    <p className="text-sm text-[var(--color-maroon)] sm:text-base">
-                        © 2026 Matrimony. All Rights Reserved.
+                <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[var(--color-golden-800)] pt-8 lg:flex-row">
+                    <p className="text-center text-sm lg:text-left">
+                        © 2026 Aaha Kalyanam. All Rights Reserved.
                     </p>
 
-                    <p className="flex items-center gap-2 text-sm text-[var(--color-maroon)] sm:text-base">
+                    <p className="flex items-center gap-2 text-sm">
                         Made with
                         <FaHeart className="text-[var(--color-maroon)]" />
                         for Happy Families
